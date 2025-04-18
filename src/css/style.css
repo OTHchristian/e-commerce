@@ -1,0 +1,611 @@
+.container{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin: 0 10px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.search{
+    width: 250px;
+    height: 30px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.search input{
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    width: 200px;
+}
+.search input:focus{
+    outline: none;
+}
+.wallpaper{
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(251, 161, 189);
+    overflow: hidden;
+    border-radius: 10px;
+}
+.wallpaper h1{
+    color: rgb(2, 82, 2);
+}
+.wallpaper .s1{
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+.wallpaper button{
+    height: 50px;
+    padding: 0px 20px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(2, 82, 2);
+    border: none;
+    border-radius: 20px;
+}
+.wallpaper .s2{
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    align-items: end;
+}
+.filter{
+    margin: 20px 0px;
+    width: 100%;
+}
+.filter .content{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    width: 100%;
+}
+.filter-element{
+    padding: 7px 18px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    white-space: nowrap;
+    margin: 0px 5px;
+}
+.filter .col-4{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+.others-filter{
+    margin: 0px 0px;
+    padding: 4px 15px;
+    border-radius: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+}
+.article{
+    width: 100%;
+}
+.article-element{
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+    transition: 0.6s;
+}
+.article-element .up{
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+.article-element .up .favoris{
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+.article-element .down{
+    height: 50%;
+    width: 100%;
+    padding-top: 5px;
+}
+.article-element .down .col-9, .article-element .down .col-3{
+    display: flex;
+    justify-content: center;
+}
+.article-element .down p{
+    margin: 0px 0px;;
+}
+.article-element .down .titre{
+    font-weight: bold;
+}
+.article-element .down .start{
+    width: 100%;
+    display: flex;
+}
+.article-element .down .start img{
+    width: 15px;
+    height: 15px;
+    margin: 0px 5px;
+}
+.article-element .down button{
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    border: 1px solid black;
+    background-color: white;
+}
+.article-element .down button:hover{
+    background-color: rgb(2, 82, 2);
+    color: white;
+    border: white;
+}
+.pagination{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-element{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0px 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination .active{
+    scale: 1.2;
+}
+.show-article{
+    width: 100%;
+}
+.show-article .col-xl-6{
+    margin: 10px 0px;
+}
+.show-article .col-xl-6 .up{
+    width: 100%;
+    height: 75vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.show-article .col-xl-6 .down{
+    margin: 10px 0px;
+    width: 100%;
+
+}
+.show-article .col-xl-6 .down .col-6{
+    margin:  10px 0px;
+}
+.show-article .start, .show-article .color, .show-article .number{
+    width: 100%;
+    display: flex;
+}
+.show-article .start img{
+    width: 15px;
+    height: 15px;
+    margin: 0px 5px;
+}
+.show-article .down .item{
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.show-article .color .color-element{
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.show-article .color .active{
+    border: 2px solid black;
+}
+.show-article .number{
+    align-items: center ;
+}
+.show-article .number .nbre{
+    padding: Opx 10px;
+    height:35px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.show-article .number a {
+    color: #ffc107;
+}
+.show-article .number .nbre input{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+}
+.show-article .number .nbre input:focus{
+    outline: none;
+}
+.show-article .number .nbre .moins,.show-article .number .nbre .plus{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+}
+.show-article .payment .now, .show-article .payment .add-card{
+    border: none;
+    margin: 20px 10px;
+    padding: 10px 30px;
+    border-radius: 20px
+}
+.show-article .payment .now{
+    background-color: rgb(2, 82, 2);
+    color: white;
+    font-weight: bold;
+}
+.show-article .payment .add-card{
+    background-color: white;
+    border: 1px solid black;
+}
+.show-article .delivery{
+    padding: 10px 10px;
+    
+}
+.more-details{
+    width: 100%;
+}
+.more-details .col-sm-12{
+    margin: 10px 0px;
+}
+.details{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+.details .item{
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+.details .i{
+    background-color: white;
+}
+.details .item .col-6{
+ width: 50%;
+ display: flex;
+ justify-content: center;
+}
+.space-checkout{
+    width: 100%;
+}
+.space-checkout .up, .space-checkout .down{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px 0px;
+}
+
+.space-checkout .down button{
+    border: none;
+    padding: 3px 15px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.space-checkout .right{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px 0px;
+}
+.space-checkout .up .article{
+    height: 20vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.space-checkout .up .row{
+    margin: 20px 0px;
+}
+.space-checkout .up .col-sm-8 {
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-around;
+    align-items: center;
+}
+.space-checkout .right .promotion-code{
+    display: inline-flex;
+    margin: 20px 0px;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.space-checkout .right .promotion-code input{
+    background-color: transparent;
+    border: none;
+    height: 30px;
+}
+.space-checkout .right .promotion-code input:focus{
+    outline: none;
+}
+.space-checkout .right .promotion-code button{
+    height: 30px;
+    padding: 0px 20px;
+    color: white;
+    background-color: rgb(2, 82, 2);
+    border: none;
+    border-radius: 10px;
+}
+.space-checkout .right .method{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+.space-checkout .right .method .radio-item{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+
+}
+.space-checkout .right .method .active{
+    border: 3px solid green;
+
+}
+.space-checkout .right .payment-card{
+    width: 100%;
+    display: flex;
+}
+.space-checkout .right .payment-card img{
+    width: 50px;
+    height: 30px;
+    margin: 0px 5px;
+}
+.space-checkout .right .payment-card .active{
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+.entry{
+    margin: 10px 0px;
+}
+.entry div{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.entry div input{
+    width: 100%;
+    border: none;
+}
+.entry div input:focus{
+    outline: none;
+}
+.facture{
+    margin: 10px 0px;
+}
+.facture .col-6{
+    display: flex;
+    margin: 5px 0px;
+    justify-content: center;
+}
+.facture .for-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facture .for-button button{
+    width: 80%;
+    height: 50px;
+    padding: 0px 20px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(2, 82, 2);
+    border: none;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+.facture .content-pop-up{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.facture .pop-up{
+    height: 350px;
+    width: 350px;
+    background: linear-gradient(to bottom,rgb(179, 201, 255),rgb(205, 244, 235),white,white);
+    border-radius: 10px;
+    transform: translateY(15%);
+    z-index: 1;
+    animation: translation 0.5s linear;
+}
+@keyframes translation {
+    from{
+        transform: translateY(-100%);
+    }to{
+        transform: translateY(15%);
+    }
+}
+.facture .pop-up .up{
+    border: none;
+    padding: 20px;
+    height: 20px;
+    height: 60%;
+}
+.facture .pop-up .up .check{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+}
+.facture .pop-up .down{
+    border: none;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facture .pop-up .down button{
+    background-color: #ffc107;
+    color: white;
+    padding: 10px 20px;
+
+}
+.for-login, .for-singin,.for-cart{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.login h1, .singin h1, .cart h1{
+    color:  rgb(2, 82, 2);   
+}
+.login h1 span, .singin h1 span, .cart h1 span{
+    animation: undescore 2s infinite ease-in-out;
+}
+@keyframes undescore {
+    from{
+        color: transparent;
+    }to{
+        color: rgb(2, 82, 2);
+    }
+    
+}
+.login form, .singin form{
+    padding: 10px 20px;
+    width: 360px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.login form button, .singin form button{
+    padding: 10px 0px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin: 15px 0px;
+    color: white;
+    background-color: rgb(2, 82, 2);
+    
+}
+.login form .to-sing-in, .singin form .to-login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.head-category{
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.head-category .row{
+    height: 100%;
+    width: 100%;
+}
+.head-category .row .col-6, .head-category .row .col-3{
+    height: 100%;
+    transition: 1s;
+}
+.head-category .row .elmt{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.cart .for-cart-elmt{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 500px;
+    padding: 10px 20px;
+}
+.cart-elmt{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 80px;
+    margin: 10px 0px;
+    transition: 0.4s ease-in-out;
+    overflow: hidden;
+}
+.cart-elmt:hover{
+    scale: 1.05;
+}
+
+.cart-elmt .row .col-6,.cart-elmt .row .col-3{
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.cart-elmt .row .col-3 .img{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.cart .row .col-6 button{
+    padding: 10px 0px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin: 15px 0px;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.cart .row .col-6 button:hover{
+    scale: 1.1;
+}
+
+.cart .row .col-6 .validated{
+    background-color: rgb(2, 82, 2);
+}
+/* .cart .row .col-6 .reset{
+    background-color: #F04770;
+} */
+@media (max-width: 600px) {
+    .cart .for-cart-elmt{
+        width: 360px;
+    }
+}
+::-webkit-scrollbar {
+    width: 0px;
+    border-radius: 1px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+}
