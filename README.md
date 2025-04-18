@@ -68,11 +68,13 @@ L'application utilise un routeur central (`createBrowserRouter`) qui gère les p
 - `vite` (ou autre outil de build si utilisé)
 
 ## 📸 Aperçu
+![](public/1.PNG)
 
-![alt text](public/1.PNG)
-![alt text](public/2.PNG)
-![alt text](public/3.PNG)
-![alt text](public/4.PNG)
+![](public/2.PNG)
+
+![](public/3.PNG)
+
+![](public/4.PNG)
 
 ## 🧑‍💻 Auteur
 
