@@ -69,7 +69,10 @@ L'application utilise un routeur central (`createBrowserRouter`) qui gère les p
 
 ## 📸 Aperçu
 
-> *(Ajoute ici des captures d’écran si tu veux montrer l’apparence de l’app.)*
+![alt text](public/1.PNG)
+![alt text](public/2.PNG)
+![alt text](public/3.PNG)
+![alt text](public/4.PNG)
 
 ## 🧑‍💻 Auteur
 
